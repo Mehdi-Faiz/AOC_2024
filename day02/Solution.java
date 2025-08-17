@@ -43,7 +43,7 @@ public class Solution{
 
             int diff = Math.abs(safe.get(i) - safe.get(i + 1));
 
-            if( (safe.get(i) < safe.get(i + 1)) || (diff < 1 || diff > 3)){
+            if((safe.get(i) > safe.get(i + 1)) || (diff < 1 || diff > 3)){
                 return false;
             }
         }
